@@ -1,0 +1,267 @@
+@media screen and (min-width: 1024px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* header*/
+    
+    header {
+        background-color: #FFC017;
+        height: 35vw;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    header section div{
+        height: 40vw;
+        width: 40vw;
+        float: right;
+        position: relative;
+        bottom: 21.5vw;
+    }
+
+    nav {
+        height: 3vw;
+        border-bottom: 1px solid black;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav img {
+        height: 1.6vw;
+        margin: 0 40vw 0 10%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1vw;
+        color: #181919;
+    }
+
+    button {
+        padding: 1vw;
+        border-radius: 1.5vw;
+        font-size: 1vw;
+        background-color: #181919;
+        color: white;
+        border: 0;
+    }
+
+    h1 {
+        font-size: 7vw;
+        font-family: serif;
+        margin: 5vw 0 0 11vw;
+    }
+
+    header section p {
+        font-size: 1.5vw;
+        margin: 1.5vw 0 0 11vw;
+        width: 27vw;
+    }
+
+    section button {
+        width: 13vw;
+        margin: 4vw 0 0 11vw;
+        padding: 0.8vw;
+    }
+
+    /*main*/
+    article {
+        padding: 3vw;
+        height: 20vw;
+        margin-bottom: 3vw;
+    }
+
+    article section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        bottom: 20vw;
+    }
+
+    article > h2 {
+        font-size: 0.8vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 0 2vw 9vw;
+        letter-spacing: 0.1vw;
+    }
+
+    article section div {
+        width: 28vw;
+        margin: 0 1vw 3vw 1vw;
+    }
+
+    article section div p:first-of-type {
+        float: left;
+        color: #E6E7E6;
+        font-size: 2vw;
+        font-weight: bold;
+        margin: 0 1.5vw 0 0;
+    }
+
+    article section div img:first-of-type {
+        border-radius: 2vw;
+        height: 1.3vw;
+    }
+
+    article section div h3 {
+        font-size: 1vw;
+        display: inline-block;
+        margin: 0 0 1vw 1vw
+    }
+
+    article section div h2 {
+        font-size: 1.1vw;
+        font-weight: bold;
+        margin: 0 0 1vw 4vw;
+    }
+
+    article section div p:last-of-type {
+        font-size: 1vw;
+        color: #9a9b9a;
+        margin-left: 4vw;
+    }
+
+    article section div img:last-of-type {
+        height: 1.3vw;
+        position: relative;
+        left: 13vw;
+        bottom: 1.25vw;
+    }
+
+    /*aside*/
+
+    aside {
+        float: left;
+        width: 50%;
+        padding-left: 10vw;
+    }
+
+    aside div {
+        height: 13vw;
+        margin-bottom: 2vw;
+    }
+
+    aside div img:first-of-type {
+        border-radius: 2vw;
+        height: 1.5vw;
+    }
+
+    aside div h5 {
+        font-size: 1vw;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 1vw;
+    }
+
+    aside div h4 {
+        font-size: 1.5vw;
+        font-weight: bold;
+        margin-top: 0.5vw;
+        width: 30vw;
+        line-height: 1.8vw;
+    }
+
+    aside div p:first-of-type {
+        font-size: 1.1vw;
+        margin-top: 0.5vw;
+        color: #9a9b9a;
+        width: 30vw;
+        line-height: 1.5vw;
+    }
+
+    aside div p:nth-last-of-type(1) {
+        font-size: 1vw;
+        margin-top: 1vw;
+        color: #9a9b9a;
+    }
+
+    aside div img:last-of-type {
+        width: 13vw;
+        position: relative;
+        left: 30vw;
+        bottom: 9vw;
+    }
+
+    .due img:last-of-type {
+        position: relative;
+        bottom: 10.7vw;
+    }
+
+    .quattro img:last-of-type {
+        position: relative;
+        bottom: 9vw;
+        left: 31.5vw;
+    }
+
+    aside div img:nth-of-type(2) {
+        width: 1.3vw;
+        position: relative;
+        left: 13vw;
+        bottom: 8.4vw;
+    }
+
+    aside div img:nth-last-of-type(2) {
+        width: 1.5vw;
+        position: relative;
+        left: 28vw;
+        bottom: 8vw;
+    }
+
+    /*section*/
+
+    .tags {
+        display: inline-block;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h6 {
+        font-size: 0.8vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 0 2vw 0;
+        letter-spacing: 0.1vw;
+        width: 100%;
+    }
+
+    .tags div {
+        font-size: 1vw;
+        color: #9a9b9a;
+        border: 1px solid #E6E7E6;
+        width: 20%;
+        padding: 0.6vw 0 0.6vw 0;
+        text-align: center;
+        display: block;
+        margin: 0.2vw;
+    }
+
+    .resources {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 30vw;
+    }
+
+    hr {
+        color: #E6E7E6;
+        width: 30vw;
+        margin: 2vw 0 2vw 0;
+    }
+
+    .resources p {
+        font-size: 1vw;
+        color: #9a9b9a;
+        margin: 1vw 2vw 0 0;
+    }
+}
