@@ -10,13 +10,15 @@
     <title>Medium -- Where good ideas find you.</title>
 
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style-tablet.css">
     <link rel="stylesheet" href="./assets/css/style-desktop.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <nav>
+            <nav 
+            onscroll="scrollNav()">
                 <img src="./assets/imgs/svg/logo.svg" alt="">
 
                 <ul>
@@ -5281,10 +5283,11 @@
 
         <main>
             <article>
+                <img src="./assets/imgs/svg/trending.svg" alt="">
                 <h2>Trending on Medium</h2>
 
                 <section>
-                    <div>
+                    <div class="one">
                         <p>01</p>
                         <img src="./assets/imgs/image01.jpeg" alt="profile_tom cooper">
                         <h3>Tom Cooper</h3>
@@ -5292,7 +5295,7 @@
                         <p>Oct 23 &middot; 5 min read</p>
                     </div>
 
-                    <div>
+                    <div class="two">
                         <p>02</p>
                         <img src="./assets/imgs/image02.png" alt="">
                         <h3>Arthur Hayes <span>in</span> Entrpeneur&apos;s Handbook</h3>
@@ -5300,7 +5303,7 @@
                         <p>Oct 26 &middot; 24 min read</p>
                     </div>
 
-                    <div>
+                    <div class="three">
                         <p>03</p>
                         <img src="./assets/imgs/image03.jpeg" alt="profile_slack jaw">
                         <h3>Erin A Ross <span>in</span> Slackjaw</h3>
@@ -5337,6 +5340,8 @@
                         <img src="./assets/imgs/svg/star.svg" alt="star">
                     </div>
                 </section>
+
+                <hr>
             </article>
 
             <aside>
@@ -5423,15 +5428,15 @@
 
                 <h6>Discovering more</h6>
 
-                <div>Programming</div>
-                <div>Data Science</div>
-                <div>Technology</div>
-                <div>Self Improvement</div>
-                <div>Writing</div>
-                <div>Relationships</div>
-                <div>Machine Learning</div>
-                <div>Productivity</div>
-                <div>Politics</div>
+                <div class="a">Programming</div>
+                <div class="b">Data Science</div>
+                <div class="c">Technology</div>
+                <div class="d">Self Improvement</div>
+                <div class="e">Writing</div>
+                <div class="f">Relationships</div>
+                <div class="g">Machine Learning</div>
+                <div class="h">Productivity</div>
+                <div class="i">Politics</div>
             </section>
 
             <section class="resources">
@@ -5449,7 +5454,11 @@
             </section>
         </main>
 
-        <footer></footer>
+        <script>
+            function scrollNav() {
+                document.getElementsByTagName("nav").style.backgroundColor = "white";
+            }
+        </script>
     </div>
 </body>
 

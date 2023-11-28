@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -7,7 +7,7 @@
     
     header {
         background-color: #FFC017;
-        height: 35vw;
+        height: 65vw;
         width: 100%;
         border-bottom: 1px solid black;
         position: relative;
@@ -20,16 +20,17 @@
     }
 
     header section div{
-        height: 40vw;
-        width: 40vw;
+        height: 70vw;
+        width: 70vw;
         float: right;
         position: relative;
+        left: 0vw;
         bottom: 21.5vw;
     }
 
     nav {
         background-color: #FFC017;
-        height: 3vw;
+        height: 7.5vw;
         border-bottom: 1px solid black;
         padding: 1%;
         display: flex;
@@ -40,34 +41,32 @@
         transition: background-color 1s;
     }
 
-    
-
     nav img {
-        height: 1.6vw;
-        margin: 0 40vw 0 10%;
+        height: 3vw;
+        margin: 0 13vw 0 5%;
     }
 
     nav ul {
         list-style-type: none;
-        width: 30%;
+        width: 52%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 1vw;
+        font-size: 1.8vw;
         color: #181919;
     }
 
     button {
-        padding: 1vw;
-        border-radius: 1.5vw;
-        font-size: 1vw;
+        padding: 1.5vw 2vw 1.5vw 2vw;
+        border-radius: 3vw;
+        font-size: 1.6vw;
         background-color: #181919;
         color: white;
         border: 0;
     }
 
     h1 {
-        font-size: 7vw;
+        font-size: 10vw;
         font-family: serif;
         margin: 5vw 0 0 11vw;
     }
