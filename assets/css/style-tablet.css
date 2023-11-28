@@ -1,6 +1,7 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
         font-family: Arial, Helvetica, sans-serif;
+        height: fit-content;
     }
 
     /* header*/
@@ -25,7 +26,7 @@
         float: right;
         position: relative;
         left: 0vw;
-        bottom: 21.5vw;
+        bottom: 35vw;
     }
 
     nav {
@@ -38,7 +39,16 @@
         position: fixed;
         z-index: 1;
         width: 100%;
-        transition: background-color 1s;
+    }
+
+    .scrolled {
+        background-color: white;
+        transition: background-color 1s ease;
+    }
+
+    .green {
+        background-color: green;
+        transition: background-color 1.5s ease;
     }
 
     nav img {
@@ -69,18 +79,28 @@
         font-size: 10vw;
         font-family: serif;
         margin: 5vw 0 0 11vw;
+        position: relative;
+        top: 12vw;
+        right: 5vw;
     }
 
     header section p {
-        font-size: 1.5vw;
+        font-size: 3vw;
         margin: 1.5vw 0 0 11vw;
-        width: 27vw;
+        width: 55vw;
+        position: relative;
+        top: 13vw;
+        right: 5vw;
     }
 
     section button {
-        width: 13vw;
+        width: 24vw;
         margin: 4vw 0 0 11vw;
-        padding: 0.8vw;
+        padding: 1vw;
+        font-size: 2.2vw;
+        position: relative;
+        top: 15vw;
+        right: 5vw;
     }
 
     /*main*/
@@ -88,7 +108,10 @@
         padding: 3vw;
         height: 20vw;
         margin-bottom: 3vw;
+        position: relative;
+        bottom: 3vw;
     }
+
 
     article section {
         display: flex;
@@ -97,171 +120,149 @@
         align-items: center;
         width: 100%;
         position: relative;
-        bottom: 14vw;
-    }
-
-    article > img {
-        position: relative;
-        left: 3.1vw;
-        bottom: 3.5vw;
-    }
-
-    article > h2 {
-        font-size: 0.8vw;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 0 0 2vw 6vw;
-        letter-spacing: 0.1vw;
-        position: relative;
-        bottom: 5.3vw;
+        bottom: 22vw;
     }
 
     article section div {
-        width: 28vw;
-        margin: 0 1vw 3vw 1vw;
+        width: 40vw;
+        margin: 0 1vw 4vw 3vw;
+        height: fit-content;
     }
 
     article section div p:first-of-type {
         float: left;
         color: #E6E7E6;
-        font-size: 2vw;
+        font-size: 3.5vw;
         font-weight: bold;
-        margin: 0 1.5vw 0 0;
+        margin: 0 2vw 0 0;
+    }
+
+    article section div h3 {
+        font-size: 1.5vw;
+        font-weight: bold;
+        display: inline-block;
+        width: 70%;
+        margin: 0 0 1vw 1vw
+    }
+
+    article > img {
+        margin-left: 5vw;
+    }
+
+    article > h2 {
+        position: relative;
+        bottom: 3vw;
+        left: 10vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        width: 25vw;
     }
 
     article section div img:first-of-type {
         border-radius: 2vw;
-        height: 1.3vw;
+        height: 3vw;
+        width: 3vw;
     }
-
-    article section div h3 {
-        font-size: 1vw;
-        display: inline-block;
-        margin: 0 0 1vw 1vw
-    }
-
+    
     article section div h2 {
-        font-size: 1.1vw;
+        font-size: 2vw;
         font-weight: bold;
-        margin: 0 0 1vw 4vw;
+        margin-left: 6vw;
+        padding: 0 0 1vw 0;
     }
 
     article section div p:last-of-type {
-        font-size: 1vw;
+        font-size: 1.5vw;
         color: #9a9b9a;
-        margin-left: 4vw;
+        margin: 1vw 0 0 6vw;
+    }
+
+    article section div p:last-of-type span:nth-of-type(1) {
+        visibility: hidden;
+    }
+
+    article section div p:last-of-type span:nth-of-type(2) {
+        margin-left: 20vw;
     }
 
     article section div img:last-of-type {
-        height: 1.3vw;
-        position: relative;
-        left: 13vw;
-        bottom: 1.25vw;
-    }
-
-    h3 {
-        position: relative;
-        bottom: 0.3vw;
-    }
-
-    .one img:first-of-type, .two img:first-of-type, .three img:first-of-type{
-        position: relative;
-        left: 0.2vw;
-        bottom: 0.1vw;
+        display: none;
     }
 
     article hr {
         position: relative;
-        bottom: 14vw;
+        bottom: 21vw;
         left: -3.2vw;
-        width: 100vw;
+        width: 98.8vw;
         color: #f5f5f5;
+    }
+
+    article span {
+        color: #9a9b9a;
     }
 
     /*aside*/
 
     aside {
-        float: left;
-        width: 50%;
         padding-left: 10vw;
+        position: relative;
+        top: 62vw;
     }
 
     aside div {
-        height: 12vw;
+        height: 20vw;
+        width: 80vw;
     }
 
     .cinque, .sei {
-        height: 14vw;
+        height: 20vw;
     }
 
     aside div img:first-of-type {
         border-radius: 2vw;
-        height: 1.5vw;
+        height: 2.5vw;
     }
 
     aside div h5 {
-        font-size: 1vw;
+        font-size: 1.5vw;
         font-weight: bold;
         display: inline-block;
         margin-left: 1vw;
     }
 
     aside div h4 {
-        font-size: 1.5vw;
-        font-weight: bold;
+        font-size: 2vw;
+        font-weight: 800;
         margin-top: 0.5vw;
-        width: 30vw;
-        line-height: 1.5vw;
+        line-height: 3vw;
+        width: 53vw;
     }
 
     aside div p:first-of-type {
-        font-size: 1vw;
+        font-size: 2vw;
         margin-top: 0.5vw;
         color: #9a9b9a;
-        width: 30vw;
-        line-height: 1.5vw;
+        line-height: 2.5vw;
+        width: 53vw;
     }
 
     aside div p:nth-last-of-type(1) {
-        font-size: 1vw;
-        margin-top: 1vw;
+        font-size: 1.8vw;
+        margin-top: 1.5vw;
         color: #9a9b9a;
+        width: 53vw;
     }
 
     aside div img:last-of-type {
-        width: 13vw;
+        width: 25vw;
+        float: right;
         position: relative;
-        left: 30vw;
-        bottom: 9vw;
+        bottom: 15vw;
     }
 
-    .due img:last-of-type {
-        position: relative;
-        bottom: 9vw;
-    }
-
-    .quattro img:last-of-type {
-        position: relative;
-        bottom: 10vw;
-        left: 31.5vw;
-    }
-
-    .cinque img:last-of-type {
-        position: relative;
-        bottom: 10vw;
-        left: 30vw;
-    }
-
-    .sei img:last-of-type {
-        position: relative;
-        bottom: 10vw;
-        left: 30vw;
-    }
-
-    .sette img:last-of-type {
-        position: relative;
-        bottom: 10vw;
-        left: 31.5vw;
+    .sei , .sette {
+        display: none;
     }
 
     aside div img:nth-of-type(2) {
@@ -276,36 +277,6 @@
         position: relative;
         left: 28vw;
         bottom: 8vw;
-    }
-
-    .tre img:nth-last-of-type(3) {
-        position: relative;
-        left: 20.7vw;
-        bottom: 8.5vw;
-    }
-
-    .cinque img:nth-last-of-type(3) {
-        position: relative;
-        left: 15vw;
-        bottom: 8.5vw;
-    }
-
-    .sei img:nth-last-of-type(3) {
-        position: relative;
-        left: 19vw;
-        bottom: 8.5vw;
-    }
-
-    .quattro img:nth-last-of-type(2) {
-        position: relative;
-        bottom: 9vw;
-        left: 29.6vw;
-    }
-
-    .sette img:nth-last-of-type(2) {
-        position: relative;
-        bottom: 9vw;
-        left: 29.6vw;
     }
 
     aside span {
@@ -323,14 +294,16 @@
     /*section*/
 
     .tags {
-        display: inline-block;
-        width: 25%;
+        width: 80vw;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        bottom: 85vw;
+        margin-left: 10vw;
     }
 
     h6 {
-        font-size: 0.8vw;
+        font-size: 1.5vw;
         font-weight: bold;
         text-transform: uppercase;
         padding: 0 0 2vw 0;
@@ -339,49 +312,35 @@
     }
 
     .tags div {
-        font-size: 0.9vw;
+        font-size: 1.6vw;
         color: #9a9b9a;
         border: 1px solid #E6E7E6;
-        width: 25%;
-        padding: 0.6vw 0 0.6vw 0;
+        padding: 1.2vw 2.5vw 1.2vw 2.5vw;
         text-align: center;
         display: block;
-        margin: 0.2vw;
-    }
-
-    .a, .b, .c {
-        flex-grow: 0.33;
-    }
-
-    .d, .g {
-        flex-grow: 0.7;
-    }
-
-    .f {
-        flex-grow: 0.3;
-    }
-
-    .h {
-        flex-grow: 0.4;
+        margin: 0.5vw;
     }
 
     .resources {
+        width: 90vw;
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        width: 30vw;
+        position: relative;
+        bottom: 83vw;
+        margin-left: 10vw;
     }
 
     .resources hr {
         color: #E6E7E6;
-        width: 30vw;
-        margin: 2vw 0 2vw 0;
+        width: 80vw;
+        margin: 2vw 10vw 2vw 0;
     }
 
     .resources p {
-        font-size: 1vw;
+        font-size: 1.6vw;
         color: #9a9b9a;
-        margin: 1vw 2vw 0 0;
+        margin: 2vw 4vw 0 0;
     }
     
 }

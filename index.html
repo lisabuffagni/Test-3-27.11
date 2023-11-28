@@ -17,8 +17,7 @@
 <body>
     <div class="container">
         <header>
-            <nav 
-            onscroll="scrollNav()">
+            <nav>
                 <img src="./assets/imgs/svg/logo.svg" alt="">
 
                 <ul>
@@ -5292,7 +5291,7 @@
                         <img src="./assets/imgs/image01.jpeg" alt="profile_tom cooper">
                         <h3>Tom Cooper</h3>
                         <h2>Ukraine War, 23 October 2022</h2>
-                        <p>Oct 23 &middot; 5 min read</p>
+                        <p>Oct 23 <span>&middot;</span><span></span> 5 min read</span></p>
                     </div>
 
                     <div class="two">
@@ -5300,7 +5299,7 @@
                         <img src="./assets/imgs/image02.png" alt="">
                         <h3>Arthur Hayes <span>in</span> Entrpeneur&apos;s Handbook</h3>
                         <h2>Comeback</h2>
-                        <p>Oct 26 &middot; 24 min read</p>
+                        <p>Oct 26 <span>&middot;</span><span></span> 24 min read</span></p>
                     </div>
 
                     <div class="three">
@@ -5309,16 +5308,16 @@
                         <h3>Erin A Ross <span>in</span> Slackjaw</h3>
                         <h2>How I Learned How To Love My Breasts Even 
                              Though One Is A Horcux For Voldemort</h2>
-                        <p>Oct 26 &middot; 2 min read</p>
+                        <p>Oct 26 <span>&middot;</span><span></span> 2 min read</span></p>
                     </div>
 
                     <div>
                         <p>04</p>
                         <img src="./assets/imgs/image04.png" alt="">
                         <h3>Frank Mastropolo <span>in</span> The Riff</h3>
-                        <h2>The Night Paul McCartney Donned a <br>
+                        <h2>The Night Paul McCartney Donned a
                             Disguise At Filmore East</h2>
-                        <p>Oct 22 &middot; 3 min read</p>
+                        <p>Oct 22 <span>&middot;</span><span> 3 min read</span></p>
                         <img src="./assets/imgs/svg/star.svg" alt="star">
                     </div>
 
@@ -5327,7 +5326,7 @@
                         <img src="./assets/imgs/image05.jpeg" alt="profile_towards data science">
                         <h3>Frank Andrade <span>in</span> Towards Data Science</h3>
                         <h2>5 Python Projects To Automate Your Life: From Beginner To Advanced</h2>
-                        <p>Oct 13 &middot; 6 min read</p>
+                        <p>Oct 13 <span>&middot;</span><span> 6 min read</span></p>
                         <img src="./assets/imgs/svg/star.svg" alt="star">
                     </div>
 
@@ -5336,7 +5335,7 @@
                         <img src="./assets/imgs/image06.png" alt="">
                         <h3>Wesley Smits <span>in</span> JavaScript in Plain English</h3>
                         <h2>How To Make Visual Studio Code Look Amazing</h2>
-                        <p>Oct 20 &middot; 7 min read</p>
+                        <p>Oct 20 <span>&middot;</span><span> 7 min read</span></p>
                         <img src="./assets/imgs/svg/star.svg" alt="star">
                     </div>
                 </section>
@@ -5455,9 +5454,19 @@
         </main>
 
         <script>
-            function scrollNav() {
-                document.getElementsByTagName("nav").style.backgroundColor = "white";
-            }
+            let nav = document.querySelector('nav');
+            let green = document.querySelector('button')
+            let navHeightPx = 300;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > navHeightPx) {
+                    nav.classList.add('scrolled');
+                    green.classList.add('green');
+                } else {
+                    nav.classList.remove('scrolled');
+                    green.classList.remove('green');
+                }
+            });
         </script>
     </div>
 </body>
